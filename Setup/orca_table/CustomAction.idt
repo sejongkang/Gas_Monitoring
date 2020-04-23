@@ -1,0 +1,16 @@
+Action	Type	Source	Target
+s72	i2	S72	S255
+CustomAction	Action
+DIRCA_CheckFX	1	MSVBDPCADLL	CheckFX
+DIRCA_TARGETDIR	307	TARGETDIR	[ProgramFiles64Folder][Manufacturer]\[ProductName]
+ERRCA_UIANDADVERTISED	19		[VSDUIANDADVERTISED]
+VSDCA_FolderForm_AllUsers	51	FolderForm_AllUsers	ALL
+VSDCA_VsdLaunchConditions	1	MSVBDPCADLL	VsdLaunchConditions
+_4690C2B7_6818_4699_9BE6_C851F36BDF23.commit	3585	InstallUtil	ManagedInstall
+_4690C2B7_6818_4699_9BE6_C851F36BDF23.commit.SetProperty	51	_4690C2B7_6818_4699_9BE6_C851F36BDF23.commit	/installtype=notransaction /action=commit /LogFile= "[#_D06859E3FA8EB92440D688BBB81A3676]" "[VSDFxConfigFile]"
+_4ABE51DF_849B_45B9_976B_7FDA0F41EA1F.rollback	3329	InstallUtil	ManagedInstall
+_4ABE51DF_849B_45B9_976B_7FDA0F41EA1F.rollback.SetProperty	51	_4ABE51DF_849B_45B9_976B_7FDA0F41EA1F.rollback	/installtype=notransaction /action=rollback /LogFile= "[#_D06859E3FA8EB92440D688BBB81A3676]" "[VSDFxConfigFile]"
+_60CAB752_4A14_442A_941E_585FAEF2A41D.install	3073	InstallUtil	ManagedInstall
+_60CAB752_4A14_442A_941E_585FAEF2A41D.install.SetProperty	51	_60CAB752_4A14_442A_941E_585FAEF2A41D.install	/installtype=notransaction /action=install /LogFile= "[#_D06859E3FA8EB92440D688BBB81A3676]" "[VSDFxConfigFile]"
+_FFB2F4B1_79CA_4364_A244_A2533A59C885.uninstall	3073	InstallUtil	ManagedInstall
+_FFB2F4B1_79CA_4364_A244_A2533A59C885.uninstall.SetProperty	51	_FFB2F4B1_79CA_4364_A244_A2533A59C885.uninstall	/installtype=notransaction /action=uninstall /LogFile= "[#_D06859E3FA8EB92440D688BBB81A3676]" "[VSDFxConfigFile]"

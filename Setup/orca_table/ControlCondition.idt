@@ -1,0 +1,71 @@
+Dialog_	Control_	Action	Condition
+s72	s50	s50	s255
+ControlCondition	Dialog_	Control_	Action	Condition
+AdminConfirmInstallForm	PreviousButton	Disable	AdminConfirmInstallForm_PrevArgs=""
+AdminConfirmInstallForm	PreviousButton	Enable	AdminConfirmInstallForm_PrevArgs<>""
+AdminFatalErrorForm	BodyTextInstall	Hide	REMOVE=""
+AdminFatalErrorForm	BodyTextInstall	Show	REMOVE<>""
+AdminFatalErrorForm	BodyTextRemove	Hide	REMOVE<>""
+AdminFatalErrorForm	BodyTextRemove	Show	REMOVE=""
+AdminFinishedForm	BodyText	Hide	REMOVE=""
+AdminFinishedForm	BodyText	Show	REMOVE<>""
+AdminFinishedForm	BodyTextInstall	Hide	REMOVE<>""
+AdminFinishedForm	BodyTextInstall	Show	REMOVE=""
+AdminFolderForm	PreviousButton	Disable	AdminFolderForm_PrevArgs=""
+AdminFolderForm	PreviousButton	Enable	AdminFolderForm_PrevArgs<>""
+AdminProgressForm	InstalledBannerText	Hide	REMOVE<>""
+AdminProgressForm	InstalledBannerText	Show	REMOVE=""
+AdminProgressForm	InstalledBody	Hide	REMOVE<>""
+AdminProgressForm	InstalledBody	Show	REMOVE=""
+AdminProgressForm	RemoveBannerText	Hide	REMOVE=""
+AdminProgressForm	RemoveBannerText	Show	REMOVE<>""
+AdminProgressForm	RemovedBody	Hide	REMOVE=""
+AdminProgressForm	RemovedBody	Show	REMOVE<>""
+AdminUserExitForm	BodyTextInstall	Hide	REMOVE<>""
+AdminUserExitForm	BodyTextInstall	Show	REMOVE=""
+AdminUserExitForm	BodyTextRemove	Hide	REMOVE=""
+AdminUserExitForm	BodyTextRemove	Show	REMOVE<>""
+AdminWelcomeForm	PreviousButton	Disable	AdminWelcomeForm_PrevArgs=""
+AdminWelcomeForm	PreviousButton	Enable	AdminWelcomeForm_PrevArgs<>""
+AdminWelcomeForm	WelcomeText	Hide	Installed<>"" OR RESUME
+AdminWelcomeForm	WelcomeText	Show	Installed="" AND NOT RESUME
+ConfirmInstallForm	PreviousButton	Disable	ConfirmInstallForm_PrevArgs=""
+ConfirmInstallForm	PreviousButton	Enable	ConfirmInstallForm_PrevArgs<>""
+DiskCost	AvailableBodyText	Hide	OutOfDiskSpace=1
+DiskCost	AvailableBodyText	Show	OutOfDiskSpace<>1
+DiskCost	RequiredBodyText	Hide	OutOfDiskSpace<>1
+DiskCost	RequiredBodyText	Show	OutOfDiskSpace=1
+FatalErrorForm	BodyTextInstall	Hide	REMOVE=""
+FatalErrorForm	BodyTextInstall	Show	REMOVE<>""
+FatalErrorForm	BodyTextRemove	Hide	REMOVE<>""
+FatalErrorForm	BodyTextRemove	Show	REMOVE=""
+FilesInUse	InstallBodyText	Hide	REMOVE<>""
+FilesInUse	InstallBodyText	Show	REMOVE=""
+FilesInUse	RemoveBodyText	Hide	REMOVE=""
+FilesInUse	RemoveBodyText	Show	REMOVE<>""
+FinishedForm	BodyText	Hide	REMOVE<>""
+FinishedForm	BodyText	Show	REMOVE=""
+FinishedForm	BodyTextRemove	Hide	REMOVE=""
+FinishedForm	BodyTextRemove	Show	REMOVE<>""
+FinishedForm	UpdateText	Hide	REMOVE<>""
+FinishedForm	UpdateText	Show	REMOVE=""
+FolderForm	AllUsersRadioGroup	Hide	NOT (VersionNT>=400 AND Privileged=1 AND FolderForm_AllUsersVisible=1)
+FolderForm	AllUsersRadioGroup	Show	VersionNT>=400 AND Privileged=1 AND FolderForm_AllUsersVisible=1
+FolderForm	AllUsersText	Hide	NOT (VersionNT>=400 AND Privileged=1 AND FolderForm_AllUsersVisible=1)
+FolderForm	AllUsersText	Show	VersionNT>=400 AND Privileged=1 AND FolderForm_AllUsersVisible=1
+FolderForm	PreviousButton	Disable	FolderForm_PrevArgs=""
+FolderForm	PreviousButton	Enable	FolderForm_PrevArgs<>""
+ProgressForm	InstalledBannerText	Hide	REMOVE<>""
+ProgressForm	InstalledBannerText	Show	REMOVE=""
+ProgressForm	InstalledBody	Hide	REMOVE<>""
+ProgressForm	InstalledBody	Show	REMOVE=""
+ProgressForm	RemoveBannerText	Hide	REMOVE=""
+ProgressForm	RemoveBannerText	Show	REMOVE<>""
+ProgressForm	RemovedBody	Hide	REMOVE=""
+ProgressForm	RemovedBody	Show	REMOVE<>""
+UserExitForm	BodyTextInstall	Hide	REMOVE<>""
+UserExitForm	BodyTextInstall	Show	REMOVE=""
+UserExitForm	BodyTextRemove	Hide	REMOVE=""
+UserExitForm	BodyTextRemove	Show	REMOVE<>""
+WelcomeForm	PreviousButton	Disable	WelcomeForm_PrevArgs=""
+WelcomeForm	PreviousButton	Enable	WelcomeForm_PrevArgs<>""

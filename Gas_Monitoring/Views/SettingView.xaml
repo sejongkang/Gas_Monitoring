@@ -1,0 +1,58 @@
+﻿<UserControl xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid" 
+    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm" 
+    xmlns:ViewModels="clr-namespace:Gas_Monitoring.ViewModels"
+    xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+    x:Class="Gas_Monitoring.Views.SettingView"
+    mc:Ignorable="d" Height="220">
+    <Grid Margin="0,0,0,3">
+        <Rectangle Margin="5" Stroke="#FF9E9E9E"/>
+        <Grid Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="7*"/>
+            </Grid.RowDefinitions>
+            <Label Content="디바이스 목록" Grid.Row="0" HorizontalAlignment="Center"/>
+            <dxg:GridControl AutoGenerateColumns="None" EnableSmartColumnsGeneration="True" Margin="0" Grid.Row="1" ItemsSource="{Binding Dev_list}" SelectionMode="Row" SelectedItems="{Binding Selected_list,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged }"  >
+                <dxg:GridControl.View>
+                    <dxg:TableView NavigationStyle="Row" ShowTotalSummary="True" AutoWidth="True" AllowGrouping="False" ShowGroupPanel="False" AllowPaging="False" ShowCheckBoxSelectorColumn="True" ShowCheckBoxSelectorInGroupRow="True" HeaderHorizontalAlignment="Center"/>
+                </dxg:GridControl.View>
+                <dxg:GridColumn  AllowEditing="False" FieldName="Dev_name" Header="이름" IsSmart="False" HorizontalHeaderContentAlignment="Center" VisibleIndex="1" AllowResizing="False" Width="80">
+                    <dxg:GridColumn.EditSettings>
+                        <dxe:TextEditSettings HorizontalContentAlignment="Center"/>
+                    </dxg:GridColumn.EditSettings>
+                </dxg:GridColumn>
+                <dxg:GridColumn  AllowEditing="False" FieldName="Dev_type" Header="종류" IsSmart="False" HorizontalHeaderContentAlignment="Center" VisibleIndex="2" AllowResizing="False" Width="50">
+                    <dxg:GridColumn.EditSettings>
+                        <dxe:TextEditSettings HorizontalContentAlignment="Center"/>
+                    </dxg:GridColumn.EditSettings>
+                </dxg:GridColumn>
+                <dxg:GridColumn  AllowEditing="False" FieldName="Serial" Header="시리얼 넘버" IsSmart="False" HorizontalHeaderContentAlignment="Center" VisibleIndex="3" AllowResizing="False" Width="120">
+                    <dxg:GridColumn.EditSettings>
+                        <dxe:TextEditSettings HorizontalContentAlignment="Center"/>
+                    </dxg:GridColumn.EditSettings>
+                </dxg:GridColumn>
+                <dxg:GridColumn  AllowEditing="False" FieldName="Local_name" Header="장소" IsSmart="False" HorizontalHeaderContentAlignment="Center" VisibleIndex="4" AllowResizing="False" Width="80">
+                    <dxg:GridColumn.EditSettings>
+                        <dxe:TextEditSettings HorizontalContentAlignment="Center"/>
+                    </dxg:GridColumn.EditSettings>
+                </dxg:GridColumn>
+                <dxg:GridColumn  AllowEditing="False" FieldName="Dev_purch_date" Header="구입 날짜" IsSmart="False" HorizontalHeaderContentAlignment="Center" VisibleIndex="5" AllowResizing="False" Width="100">
+                    <dxg:GridColumn.EditSettings>
+                        <dxe:TextEditSettings HorizontalContentAlignment="Center"/>
+                    </dxg:GridColumn.EditSettings>
+                </dxg:GridColumn>
+                <dxg:GridColumn  AllowEditing="False" FieldName="Conn" Header="연결 상태" IsSmart="False" HorizontalHeaderContentAlignment="Center" VisibleIndex="6" AllowResizing="False" Width="80">
+                    <dxg:GridColumn.EditSettings>
+                        <dxe:TextEditSettings HorizontalContentAlignment="Center"/>
+                    </dxg:GridColumn.EditSettings>
+                </dxg:GridColumn>
+            </dxg:GridControl>
+        </Grid>
+    </Grid>
+</UserControl>

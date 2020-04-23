@@ -1,0 +1,9 @@
+Property	Order	Value	X	Y	Width	Height	Text	Help
+s72	i2	s64	i2	i2	i2	i2	L64	L50
+949	RadioButton	Property	Order
+AdminMaintenanceForm_Action	1	Repair	0	0	348	17	{\VSI_MS_Sans_Serif13.0_0_0}[ProductName] 복구(&R)	
+AdminMaintenanceForm_Action	2	Remove	0	18	348	17	{\VSI_MS_Sans_Serif13.0_0_0}[ProductName] 제거(&M)	
+FolderForm_AllUsers	1	ALL	0	0	342	17	{\굴림__9_0}모든 사람(&E)	
+FolderForm_AllUsers	2	ME	0	18	342	17	{\굴림__9_0}자신만(&M)	
+MaintenanceForm_Action	1	Repair	0	0	348	17	{\VSI_MS_Sans_Serif13.0_0_0}[ProductName] 복구(&R)	
+MaintenanceForm_Action	2	Remove	0	18	348	17	{\VSI_MS_Sans_Serif13.0_0_0}[ProductName] 제거(&M)	

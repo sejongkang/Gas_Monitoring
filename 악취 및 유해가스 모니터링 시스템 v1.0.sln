@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29201.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "악취 및 유해가스 모니터링 시스템 v1.0", "Gas_Monitoring\악취 및 유해가스 모니터링 시스템 v1.0.csproj", "{D065B4BB-A649-4954-BA7D-40DB6CCEF914}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Check", "Check\Check.csproj", "{46796EE7-420F-4FE3-B611-EB91F69AB83E}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{0A324964-D580-4FEB-9E5E-CC1D458265FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		All|Any CPU = All|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D065B4BB-A649-4954-BA7D-40DB6CCEF914}.All|Any CPU.ActiveCfg = Debug|Any CPU
+		{D065B4BB-A649-4954-BA7D-40DB6CCEF914}.All|Any CPU.Build.0 = Debug|Any CPU
+		{D065B4BB-A649-4954-BA7D-40DB6CCEF914}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{D065B4BB-A649-4954-BA7D-40DB6CCEF914}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{D065B4BB-A649-4954-BA7D-40DB6CCEF914}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D065B4BB-A649-4954-BA7D-40DB6CCEF914}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46796EE7-420F-4FE3-B611-EB91F69AB83E}.All|Any CPU.ActiveCfg = Release|Any CPU
+		{46796EE7-420F-4FE3-B611-EB91F69AB83E}.All|Any CPU.Build.0 = Release|Any CPU
+		{46796EE7-420F-4FE3-B611-EB91F69AB83E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46796EE7-420F-4FE3-B611-EB91F69AB83E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46796EE7-420F-4FE3-B611-EB91F69AB83E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46796EE7-420F-4FE3-B611-EB91F69AB83E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A324964-D580-4FEB-9E5E-CC1D458265FE}.All|Any CPU.ActiveCfg = Release
+		{0A324964-D580-4FEB-9E5E-CC1D458265FE}.Debug|Any CPU.ActiveCfg = Debug
+		{0A324964-D580-4FEB-9E5E-CC1D458265FE}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {139A475B-F3ED-4D40-A0C7-CF52C6C27028}
+	EndGlobalSection
+EndGlobal

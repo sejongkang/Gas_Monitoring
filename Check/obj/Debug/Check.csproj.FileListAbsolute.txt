@@ -1,0 +1,7 @@
+D:\Users\KangSeJong\HOT\Developement\VIsualStudioProjects\Gas_Monitoring\Check\bin\Debug\Check.exe.config
+D:\Users\KangSeJong\HOT\Developement\VIsualStudioProjects\Gas_Monitoring\Check\bin\Debug\Check.exe
+D:\Users\KangSeJong\HOT\Developement\VIsualStudioProjects\Gas_Monitoring\Check\bin\Debug\Check.pdb
+D:\Users\KangSeJong\HOT\Developement\VIsualStudioProjects\Gas_Monitoring\Check\obj\Debug\Check.csproj.CoreCompileInputs.cache
+D:\Users\KangSeJong\HOT\Developement\VIsualStudioProjects\Gas_Monitoring\Check\obj\Debug\Check.exe
+D:\Users\KangSeJong\HOT\Developement\VIsualStudioProjects\Gas_Monitoring\Check\obj\Debug\Check.pdb
+D:\Users\KangSeJong\HOT\Developement\VIsualStudioProjects\Gas_Monitoring\Check\obj\Debug\Check.csprojAssemblyReference.cache

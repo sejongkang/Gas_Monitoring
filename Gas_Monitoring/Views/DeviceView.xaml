@@ -1,0 +1,235 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:dxga="http://schemas.devexpress.com/winfx/2008/xaml/gauges"
+             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm" xmlns:ViewModels="clr-namespace:Gas_Monitoring.ViewModels"
+             xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+             xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" x:Class="Gas_Monitoring.Views.DeviceView"
+             mc:Ignorable="d"
+             
+             >
+    <!--DataContext="{dxmvvm:ViewModelSource Type=ViewModels:DeviceViewModel}"-->
+    <UserControl.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="#FF839189" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="SnapsToDevicePixels" Value="True" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border CornerRadius="8" Background="{TemplateBinding Background}">
+                            <Grid>
+                                <ContentPresenter x:Name="MyContentPresenter" Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" />
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#FF18935B" />
+                                <Setter Property="Foreground" Value="White" />
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#FF157449" />
+                                <Setter Property="Foreground" Value="White" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    <Grid Grid.Column="0" Margin="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="12*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Rectangle Margin="0" Stroke="{Binding Conn_stk}" Grid.RowSpan="5" Fill="#FFFDFDFD" StrokeThickness="2"/>
+        <Grid Grid.Row="0" Margin="10,5,10,5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="4*"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="{dx:DXImage SvgImages/Outlook Inspired/MapIt.svg}" Margin="1"/>
+            <Label Content="{Binding Dev.Local_name}" Grid.Column="1" VerticalContentAlignment="Center" Foreground="#FF858585" HorizontalAlignment="Left" FontWeight="Bold" Margin="0" FontSize="17" ToolTip="장소"/>
+            <Image Grid.Column="2" Source="{Binding Conn_img}" Margin="20,14,12,13" Stretch="FIll" ToolTip="디바이스 연결 상태"/>
+        </Grid>
+        <Grid Grid.Row="1" Margin="5,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="10*"/>
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="0" Source="{dx:DXImage SvgImages/RichEdit/InsertPageNumber.svg}" Margin="0,2" HorizontalAlignment="Right" VerticalAlignment="Center" />
+            <Label Content="{Binding Dev.Serial}" Grid.Column="2" Foreground="#FF858585" HorizontalAlignment="Left" Margin="0" FontSize="12" Padding="0,0,0,1" VerticalAlignment="Center" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" ToolTip="디바이스의 시리얼 넘버"/>
+        </Grid>
+        <Grid Grid.Row="2" Margin="3,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Margin="2,10,2,0">
+                <Grid >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="3*"/>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="3*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Fill="{Binding Setting[0].Rect_fill}" Grid.Row="0" Grid.RowSpan="2" Margin="0,0,0,-2"/>
+                    <Label Content="{Binding Setting[0].Name_kor}" Foreground="{Binding Setting[0].Label_forg}" VerticalContentAlignment="Center" FontSize="12" FontWeight="Bold" HorizontalContentAlignment="Center" />
+                    <Label Content="{Binding Setting[0].Name_eng}" Foreground="{Binding Setting[0].Label_forg}" VerticalContentAlignment="Center" FontSize="14" Grid.Row="1" Padding="0" HorizontalContentAlignment="Right" Margin="0,0,5,0" />
+                    <Grid Grid.Row="2" Margin="0,0,0,5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle StrokeThickness="2" Stroke="{Binding Setting[0].Rect_fill}" Grid.Column="0" Grid.ColumnSpan="3"/>
+                        <TextBlock Grid.Column="0" IsEnabled="False" Text="{Binding Dev_result.Gas_ppm}" Foreground="{Binding Setting[0].Max_forg}" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0" FontSize="14" />
+                        <TextBlock Grid.Column="1" IsEnabled="False" Text="PPM" Foreground="{Binding Setting[0].Max_forg}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8" Margin="0,10,0,0" />
+                        <Image Source="{dx:DXImage SvgImages/Arrows/MoveUp.svg}" Grid.Column="2" Visibility="{Binding Setting[0].Max}"/>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <Grid Margin="2,10,2,0" Grid.Column="1">
+                <Grid >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="3*"/>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="3*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Fill="{Binding Setting[1].Rect_fill}" Grid.Row="0" Grid.RowSpan="2" Margin="0,0,0,-2"/>
+                    <Label Content="{Binding Setting[1].Name_kor}" Foreground="{Binding Setting[1].Label_forg}" VerticalContentAlignment="Center" FontSize="12" FontWeight="Bold" HorizontalContentAlignment="Center" />
+                    <Label Content="{Binding Setting[1].Name_eng}" Foreground="{Binding Setting[1].Label_forg}" VerticalContentAlignment="Center" FontSize="14" Grid.Row="1" Padding="0" HorizontalContentAlignment="Right" Margin="0,0,5,0" />
+                    <Grid Grid.Row="2" Margin="0,0,0,5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle StrokeThickness="2" Stroke="{Binding Setting[1].Rect_fill}" Grid.Column="0" Grid.ColumnSpan="3"/>
+                        <TextBlock Grid.Column="0" IsEnabled="False" Text="{Binding Dev_result.Gas_ppm2}" Foreground="{Binding Setting[1].Max_forg}" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0" FontSize="14" />
+                        <TextBlock Grid.Column="1" IsEnabled="False" Text="PPM" Foreground="{Binding Setting[1].Max_forg}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8" Margin="0,10,0,0" />
+                        <Image Source="{dx:DXImage SvgImages/Arrows/MoveUp.svg}" Grid.Column="2" Visibility="{Binding Setting[1].Max}"/>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <Grid Margin="2,10,2,0" Grid.Column="2">
+                <Grid >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="3*"/>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="3*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Fill="{Binding Setting[2].Rect_fill}" Grid.Row="0" Grid.RowSpan="2" Margin="0,0,0,-2"/>
+                    <Label Content="{Binding Setting[2].Name_kor}" Foreground="{Binding Setting[2].Label_forg}" VerticalContentAlignment="Center" FontSize="12" FontWeight="Bold" HorizontalContentAlignment="Center" />
+                    <Label Content="{Binding Setting[2].Name_eng}" Foreground="{Binding Setting[2].Label_forg}" VerticalContentAlignment="Center" FontSize="14" Grid.Row="1" Padding="0" HorizontalContentAlignment="Right" Margin="0,0,5,0" />
+                    <Grid Grid.Row="2" Margin="0,0,0,5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle StrokeThickness="2" Stroke="{Binding Setting[2].Rect_fill}" Grid.Column="0" Grid.ColumnSpan="3"/>
+                        <TextBlock Grid.Column="0" IsEnabled="False" Text="{Binding Dev_result.Gas_ppm3}" Foreground="{Binding Setting[2].Max_forg}" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0" FontSize="14" />
+                        <TextBlock Grid.Column="1" IsEnabled="False" Text="PPM" Foreground="{Binding Setting[2].Max_forg}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8" Margin="0,10,0,0" />
+                        <Image Source="{dx:DXImage SvgImages/Arrows/MoveUp.svg}" Grid.Column="2" Visibility="{Binding Setting[2].Max}"/>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <Grid Margin="2,10,2,0" Grid.Row="1" Grid.Column="0">
+                <Grid >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="3*"/>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="3*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Fill="{Binding Setting[3].Rect_fill}" Grid.Row="0" Grid.RowSpan="2" Margin="0,0,0,-2"/>
+                    <Label Content="{Binding Setting[3].Name_kor}" Foreground="{Binding Setting[3].Label_forg}" VerticalContentAlignment="Center" FontSize="12" FontWeight="Bold" HorizontalContentAlignment="Center" />
+                    <Label Content="{Binding Setting[3].Name_eng}" Foreground="{Binding Setting[3].Label_forg}" VerticalContentAlignment="Center" FontSize="14" Grid.Row="1" Padding="0" HorizontalContentAlignment="Right" Margin="0,0,5,0" />
+                    <Grid Grid.Row="2" Margin="0,0,0,5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle StrokeThickness="2" Stroke="{Binding Setting[3].Rect_fill}" Grid.Column="0" Grid.ColumnSpan="3"/>
+                        <TextBlock Grid.Column="0" IsEnabled="False" Text="{Binding Dev_result.Gas_ppm4}" Foreground="{Binding Setting[3].Max_forg}" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0" FontSize="14" />
+                        <TextBlock Grid.Column="1" IsEnabled="False" Text="PPM" Foreground="{Binding Setting[3].Max_forg}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8" Margin="0,10,0,0" />
+                        <Image Source="{dx:DXImage SvgImages/Arrows/MoveUp.svg}" Grid.Column="2" Visibility="{Binding Setting[3].Max}"/>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <Grid Margin="2,10,2,0" Grid.Row="1" Grid.Column="1">
+                <Grid >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="3*"/>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="3*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Fill="{Binding Setting[4].Rect_fill}" Grid.Row="0" Grid.RowSpan="2" Margin="0,0,0,-2"/>
+                    <Label Content="{Binding Setting[4].Name_kor}" Foreground="{Binding Setting[4].Label_forg}" VerticalContentAlignment="Center" FontSize="12" FontWeight="Bold" HorizontalContentAlignment="Center" />
+                    <Label Content="{Binding Setting[4].Name_eng}" Foreground="{Binding Setting[4].Label_forg}" VerticalContentAlignment="Center" FontSize="14" Grid.Row="1" Padding="0" HorizontalContentAlignment="Right" Margin="0,0,5,0" />
+                    <Grid Grid.Row="2" Margin="0,0,0,5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle StrokeThickness="2" Stroke="{Binding Setting[4].Rect_fill}" Grid.Column="0" Grid.ColumnSpan="3"/>
+                        <TextBlock Grid.Column="0" IsEnabled="False" Text="{Binding Dev_result.Gas_ppm5}" Foreground="{Binding Setting[4].Max_forg}" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0" FontSize="14" />
+                        <TextBlock Grid.Column="1" IsEnabled="False" Text="PPM" Foreground="{Binding Setting[4].Max_forg}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8" Margin="0,10,0,0" />
+                        <Image Source="{dx:DXImage SvgImages/Arrows/MoveUp.svg}" Grid.Column="2" Visibility="{Binding Setting[4].Max}"/>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <Grid Margin="2,10,2,0" Grid.Row="1" Grid.Column="2">
+                <Grid >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="3*"/>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="3*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Fill="{Binding Setting[5].Rect_fill}" Grid.Row="0" Grid.RowSpan="2" Margin="0,0,0,-2"/>
+                    <Label Content="{Binding Setting[5].Name_kor}" Foreground="{Binding Setting[5].Label_forg}" VerticalContentAlignment="Center" FontSize="12" FontWeight="Bold" HorizontalContentAlignment="Center" />
+                    <Label Content="{Binding Setting[5].Name_eng}" Foreground="{Binding Setting[5].Label_forg}" VerticalContentAlignment="Center" FontSize="14" Grid.Row="1" Padding="0" HorizontalContentAlignment="Right" Margin="0,0,5,0" />
+                    <Grid Grid.Row="2" Margin="0,0,0,5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle StrokeThickness="2" Stroke="{Binding Setting[5].Rect_fill}" Grid.Column="0" Grid.ColumnSpan="3"/>
+                        <TextBlock Grid.Column="0" IsEnabled="False" Text="{Binding Dev_result.Gas_ppm6}" Foreground="{Binding Setting[5].Max_forg}" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0" FontSize="14" />
+                        <TextBlock Grid.Column="1" IsEnabled="False" Text="PPM" Foreground="{Binding Setting[5].Max_forg}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8" Margin="0,10,0,0" />
+                        <Image Source="{dx:DXImage SvgImages/Arrows/MoveUp.svg}" Grid.Column="2" Visibility="{Binding Setting[5].Max}"/>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Grid>
+        <dx:WaitIndicator DeferedVisibility="True" Content="분류 중.." Visibility="{Binding Loading}" Grid.Row="2" FontSize="8" d:IsHidden="True">
+            <dx:WaitIndicator.ContentTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="기다려 주십시오" FontSize="10"/>
+                        <TextBlock Text="{Binding}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </dx:WaitIndicator.ContentTemplate>
+        </dx:WaitIndicator>
+        <Label Content="연결 끊김" Visibility="{Binding Conn_text}" Grid.Row="2" FontWeight="Bold" Foreground="#FF959595" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="#FF898989" BorderThickness="1" Margin="5,0" Background="White" d:IsHidden="True"/>
+        <Grid Grid.Row="3">
+            <Label Content="{Binding Date_time_str}" Grid.Column="1" Foreground="#FF858585" HorizontalAlignment="Center" Margin="0" Padding="0,0,0,1" VerticalAlignment="Center" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" FontSize="16" ToolTip="마지막 조회 시간"/>
+        </Grid>
+        <Button Grid.Row="4" Content="{Binding Device_name}" Margin="5" Command="{Binding ButtonCommand}" BorderBrush="{Binding Conn_stk}" BorderThickness="2" ToolTip="디바이스 탭을 생성합니다." FontSize="16" FontWeight="Bold"/>
+        
+    </Grid>
+</UserControl>

@@ -1,0 +1,54 @@
+Key	Text
+s72	L255
+949	UIText	Key
+AbsentPath	
+GB	GB
+KB	KB
+MB	MB
+MenuAbsent	모든 기능을 사용할 수 없습니다.
+MenuAdvertise	필요할 때 기능이 설치됩니다.
+MenuAllCD	모든 기능이 CD에서 실행되도록 설치됩니다.
+MenuAllLocal	모든 기능이 로컬 하드 드라이브에 설치됩니다.
+MenuAllNetwork	모든 기능이 네트워크에서 실행되도록 설치됩니다.
+MenuCD	CD에서 실행되도록 설치됩니다.
+MenuLocal	로컬 하드 드라이브에 설치됩니다.
+MenuNetwork	네트워크에서 실행되도록 설치됩니다.
+NewFolder	폴더|새 폴더
+ScriptInProgress	필요한 정보를 모으고 있습니다...
+SelAbsentAbsent	이 기능은 설치되지 않습니다.
+SelAbsentAdvertise	필요할 때 이 기능을 설치하도록 설정할 수 있습니다.
+SelAbsentCD	이 기능은 CD에서 실행되도록 설치됩니다.
+SelAbsentLocal	이 기능은 로컬 하드 드라이브에 설치됩니다.
+SelAbsentNetwork	이 기능은 네트워크에서 실행되도록 설치됩니다.
+SelAdvertiseAbsent	이 기능을 사용할 수 없게 됩니다.
+SelAdvertiseAdvertise	필요할 때 설치됩니다.
+SelAdvertiseCD	이 기능은 CD에서 실행할 수 있습니다.
+SelAdvertiseLocal	이 기능은 로컬 하드 드라이브에 설치됩니다.
+SelAdvertiseNetwork	이 기능은 네트워크에서 실행할 수 있습니다.
+SelCDAbsent	이 기능은 완전히 제거됩니다. CD에서 실행할 수 없습니다.
+SelCDAdvertise	이 기능은 CD에서 실행되던 상태에서 필요할 때 설치되는 것으로 변경됩니다.
+SelCDCD	이 기능은 그대로 CD에서 실행됩니다.
+SelCDLocal	이 기능은 CD에서 실행되던 상태에서 로컬 하드 드라이브에 설치되는 것으로 변경됩니다.
+SelChildCostNeg	이 기능은 하드 드라이브에 [1]의 공간을 만듭니다.
+SelChildCostPos	이 기능을 실행하려면 하드 드라이브에 [1]이(가) 있어야 합니다.
+SelCostPending	이 기능에 대한 공간을 계산하고 있습니다...
+SelLocalAbsent	이 기능은 완전히 제거됩니다.
+SelLocalAdvertise	이 기능은 로컬 하드 드라이브에서 제거되지만 필요할 때 설치하도록 설정할 수 있습니다.
+SelLocalCD	이 기능은 로컬 하드 드라이브에서 제거되지만 CD에서는 실행할 수 있습니다.
+SelLocalLocal	이 기능은 로컬 하드 드라이브에 그대로 남아 있게 됩니다.
+SelLocalNetwork	이 기능은 로컬 하드 드라이브에서 제거되지만 네트워크에서 실행할 수 있습니다.
+SelNetworkAbsent	이 기능은 완전히 제거됩니다. 네트워크에서 실행할 수 없게 됩니다.
+SelNetworkAdvertise	이 기능은 네트워크에서 실행되던 상태에서 필요할 때 설치되는 것으로 변경됩니다.
+SelNetworkLocal	이 기능은 네트워크에서 실행되던 상태에서 로컬 하드 드라이브에 설치되는 것으로 변경됩니다.
+SelNetworkNetwork	이 기능은 그대로 네트워크에서 실행됩니다.
+SelParentCostNegNeg	이 기능은 하드 드라이브에 [1]의 공간을 만듭니다. [3]개의 하위 기능 중 [2]개가 선택되었습니다. 하위 기능은 하드 드라이브에 [4]의 공간을 만듭니다.
+SelParentCostNegPos	이 기능은 하드 드라이브에 [1]의 공간을 만듭니다. [3]개의 하위 기능 중 [2]개가 선택되었습니다. 하위 기능을 사용하려면 하드 드라이브에 [4]이(가) 있어야 합니다.
+SelParentCostPosNeg	이 기능을 사용하려면 하드 드라이브에 [1]이(가) 있어야 합니다. [3]개의 하위 기능 중 [2]개가 선택되었습니다. 하위 기능은 하드 드라이브에 [4]의 공간을 만듭니다.
+SelParentCostPosPos	이 기능을 사용하려면 하드 드라이브에 [1]이(가) 있어야 합니다. [3]개의 하위 기능 중 [2]개가 선택되었습니다. 하위 기능을 사용하려면 하드 드라이브에 [4]이(가) 있어야 합니다.
+TimeRemaining	남은 시간: {[1]분 }{[2]초}
+VolumeCostAvailable	사용 가능한 공간
+VolumeCostDifference	차이
+VolumeCostRequired	필요한 공간
+VolumeCostSize	디스크 크기
+VolumeCostVolume	볼륨
+bytes	바이트

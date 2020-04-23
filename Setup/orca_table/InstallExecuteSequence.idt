@@ -1,0 +1,80 @@
+Action	Condition	Sequence
+s72	S255	I2
+InstallExecuteSequence	Action
+AllocateRegistrySpace	NOT Installed	1550
+AppSearch		100
+BindImage		4300
+CCPSearch	NOT Installed	500
+CostFinalize		1000
+CostInitialize		800
+CreateFolders		3700
+CreateShortcuts		4500
+DIRCA_CheckFX		1
+DIRCA_TARGETDIR	TARGETDIR=""	750
+DeleteServices	VersionNT	2000
+DuplicateFiles		4210
+FileCost		900
+FindRelatedProducts		200
+InstallExecute		6500
+InstallFiles		4000
+InstallFinalize		6600
+InstallInitialize		1500
+InstallODBC		5400
+InstallServices	VersionNT	5800
+InstallValidate		1400
+IsolateComponents	RedirectedDllSupport	950
+LaunchConditions	NOT Installed	400
+MoveFiles		3800
+MsiPublishAssemblies		6250
+MsiUnpublishAssemblies		1650
+PatchFiles		4090
+ProcessComponents		1600
+PublishComponents		6200
+PublishFeatures		6300
+PublishProduct		6400
+RMCCPSearch	NOT Installed	600
+RegisterClassInfo		4600
+RegisterComPlus		5700
+RegisterExtensionInfo		4700
+RegisterFonts		5300
+RegisterMIMEInfo		4900
+RegisterProduct		6100
+RegisterProgIdInfo		4800
+RegisterTypeLibraries		5500
+RegisterUser		6000
+RemoveDuplicateFiles		3400
+RemoveEnvironmentStrings		3300
+RemoveExistingProducts		6550
+RemoveFiles		3500
+RemoveFolders		3600
+RemoveIniValues		3100
+RemoveODBC		2400
+RemoveRegistryValues		2600
+RemoveShortcuts		3200
+SelfRegModules		5600
+SelfUnregModules		2200
+SetODBCFolders	NOT Installed	1100
+StartServices	VersionNT	5900
+StopServices	VersionNT	1900
+UnpublishComponents		1700
+UnpublishFeatures		1800
+UnregisterClassInfo		2700
+UnregisterComPlus		2100
+UnregisterExtensionInfo		2800
+UnregisterFonts		2500
+UnregisterMIMEInfo		3000
+UnregisterProgIdInfo		2900
+UnregisterTypeLibraries		2300
+VSDCA_VsdLaunchConditions	NOT Installed	399
+ValidateProductID		700
+WriteEnvironmentStrings		5200
+WriteIniValues		5100
+WriteRegistryValues		5000
+_4690C2B7_6818_4699_9BE6_C851F36BDF23.commit	$C__D06859E3FA8EB92440D688BBB81A3676>2	5995
+_4690C2B7_6818_4699_9BE6_C851F36BDF23.commit.SetProperty	$C__D06859E3FA8EB92440D688BBB81A3676>2	5994
+_4ABE51DF_849B_45B9_976B_7FDA0F41EA1F.rollback	$C__D06859E3FA8EB92440D688BBB81A3676>2	5997
+_4ABE51DF_849B_45B9_976B_7FDA0F41EA1F.rollback.SetProperty	$C__D06859E3FA8EB92440D688BBB81A3676>2	5996
+_60CAB752_4A14_442A_941E_585FAEF2A41D.install	$C__D06859E3FA8EB92440D688BBB81A3676>2	5999
+_60CAB752_4A14_442A_941E_585FAEF2A41D.install.SetProperty	$C__D06859E3FA8EB92440D688BBB81A3676>2	5998
+_FFB2F4B1_79CA_4364_A244_A2533A59C885.uninstall	$C__D06859E3FA8EB92440D688BBB81A3676=2	1699
+_FFB2F4B1_79CA_4364_A244_A2533A59C885.uninstall.SetProperty	$C__D06859E3FA8EB92440D688BBB81A3676=2	1698

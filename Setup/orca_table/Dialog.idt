@@ -1,0 +1,27 @@
+Dialog	HCentering	VCentering	Width	Height	Attributes	Title	Control_First	Control_Default	Control_Cancel
+s72	i2	i2	i2	i2	I4	L128	s50	S50	S50
+949	Dialog	Dialog
+AdminConfirmInstallForm	50	50	373	287	7	[ProductName]	NextButton	NextButton	CancelButton
+AdminFatalErrorForm	50	50	373	287	7	[ProductName]	CloseButton	CloseButton	CloseButton
+AdminFinishedForm	50	50	373	287	7	[ProductName]	CloseButton	CloseButton	CloseButton
+AdminFolderForm	50	50	373	287	39	[ProductName]	NextButton	NextButton	CancelButton
+AdminMaintenanceForm	50	50	373	287	7	[ProductName]	FinishButton	FinishButton	CancelButton
+AdminProgressForm	50	50	373	287	5	[ProductName]	NextButton		CancelButton
+AdminResumeForm	50	50	373	287	7	[ProductName]	FinishButton	FinishButton	CancelButton
+AdminUserExitForm	50	50	373	287	7	[ProductName]	CloseButton	CloseButton	CloseButton
+AdminWelcomeForm	50	50	373	287	7	[ProductName]	NextButton	NextButton	CancelButton
+Cancel	50	50	271	78	3	[ProductName]	NoButton	NoButton	NoButton
+ConfirmInstallForm	50	50	373	287	7	[ProductName]	NextButton	NextButton	CancelButton
+ConfirmRemoveDialog	50	50	271	78	3	[ProductName] 제거	NoButton	NoButton	NoButton
+DiskCost	50	50	361	192	35	[ProductName] 디스크 공간	OKButton	OKButton	OKButton
+ErrorDialog	50	50	330	101	65543	[ProductName]	ErrorText		
+FatalErrorForm	50	50	373	287	7	[ProductName]	CloseButton	CloseButton	CloseButton
+FilesInUse	50	50	361	177	3	사용 중인 [ProductName] 파일	RetryButton	RetryButton	ExitButton
+FinishedForm	50	50	373	287	7	[ProductName]	CloseButton	CloseButton	CloseButton
+FolderForm	50	50	373	287	39	[ProductName]	NextButton	NextButton	CancelButton
+MaintenanceForm	50	50	373	287	7	[ProductName]	FinishButton	FinishButton	CancelButton
+ProgressForm	50	50	373	287	5	[ProductName]	NextButton		CancelButton
+ResumeForm	50	50	373	287	7	[ProductName]	FinishButton	FinishButton	CancelButton
+SelectFolderDialog	50	50	313	223	3	폴더 찾아보기	OKButton	OKButton	CancelButton
+UserExitForm	50	50	373	287	7	[ProductName]	CloseButton	CloseButton	CloseButton
+WelcomeForm	50	50	373	287	7	[ProductName]	NextButton	NextButton	CancelButton

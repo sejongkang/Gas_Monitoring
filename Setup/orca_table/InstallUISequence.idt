@@ -1,0 +1,25 @@
+Action	Condition	Sequence
+s72	S255	I2
+InstallUISequence	Action
+AppSearch		100
+CCPSearch	NOT Installed	500
+CostFinalize		1000
+CostInitialize		800
+DIRCA_CheckFX		1
+DIRCA_TARGETDIR	TARGETDIR=""	750
+ERRCA_UIANDADVERTISED	ProductState=1	5
+ExecuteAction		1300
+FatalErrorForm	NOT HideFatalErrorForm	-3
+FileCost		900
+FinishedForm		-1
+IsolateComponents	RedirectedDllSupport	950
+LaunchConditions	NOT Installed	400
+MaintenanceForm	Installed<>""	999
+ProgressForm		1299
+RMCCPSearch	NOT Installed	600
+ResumeForm	Installed="" AND RESUME	998
+UserExitForm		-2
+VSDCA_FolderForm_AllUsers	Installed="" AND NOT RESUME AND ALLUSERS=1	997
+VSDCA_VsdLaunchConditions	NOT Installed	399
+ValidateProductID		700
+WelcomeForm	Installed="" AND NOT RESUME	1001

@@ -1,0 +1,17 @@
+ public virtual string Local_name { get => local_name; set => local_name = value; }
+        public virtual int Gas_type { get => gas_type; set => gas_type = value; }
+        public virtual double Ppm { get => ppm; set => ppm = value; }
+        public virtual int Level { get => level; set => level = value; }
+        public virtual string Local_detail { get => local_detail; set => local_detail = value; }
+        public virtual int Number { get => number; set => number = value; }
+
+        public Device(int number)
+        {
+            Number = number;
+            Local_name = "None";
+            Local_detail = "None";
+            Gas_type = 0;
+            Ppm = 0;
+            Level = 0;
+        }
+    }

@@ -1,0 +1,9 @@
+Name	Data
+s72	v0
+Binary	Name
+DefBannerBitmap	DefBannerBitmap.ibd
+InstallUtil	InstallUtil.ibd
+MSVBDPCADLL	MSVBDPCADLL.ibd
+NewFldrBtn	NewFldrBtn.ibd
+UpFldrBtn	UpFldrBtn.ibd
+VSDNETCFG	VSDNETCFG.ibd

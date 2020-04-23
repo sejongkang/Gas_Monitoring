@@ -1,0 +1,209 @@
+Dialog_	Control	Type	X	Y	Width	Height	Attributes	Property	Text	Control_Next	Help
+s72	s50	s20	i2	i2	i2	i2	I4	S50	L0	S50	L50
+949	Control	Dialog_	Control
+AdminConfirmInstallForm	BannerBmp	Bitmap	0	0	375	52	1		DefBannerBitmap	NextButton	|
+AdminConfirmInstallForm	BannerText	Text	9	9	306	33	196611		{\굴림_Bold_12_0}설치 확인		|
+AdminConfirmInstallForm	BodyText1	Text	9	63	354	180	131075		{\굴림__9_0}[ProductName]을(를) 컴퓨터에 설치할 준비가 되었습니다.설치를 시작하려면 "다음"을 클릭하십시오.		|
+AdminConfirmInstallForm	CancelButton	PushButton	156	261	66	18	3		{\굴림__9_0}취소	PreviousButton	|
+AdminConfirmInstallForm	Line1	Line	0	52	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+AdminConfirmInstallForm	Line2	Line	0	252	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+AdminConfirmInstallForm	NextButton	PushButton	300	261	66	18	3		{\굴림__9_0}다음(&N) >	CancelButton	|
+AdminConfirmInstallForm	PreviousButton	PushButton	228	261	66	18	3		{\굴림__9_0}< 뒤로(&B)	BannerBmp	|
+AdminFatalErrorForm	BannerBmp	Bitmap	0	0	375	52	1		DefBannerBitmap	CloseButton	|
+AdminFatalErrorForm	BannerText	Text	9	9	306	33	196611		{\VSI_MS_Sans_Serif16.0_1_0}실패		|
+AdminFatalErrorForm	BodyTextInstall	Text	9	63	354	180	131075		{\VSI_MS_Sans_Serif13.0_0_0}[ProductName]을(를) 설치하기 전에 중단되었습니다. 다시 시도하려면 설치 관리자를 다시 시작해야 합니다.끝내려면 "닫기"를 클릭하십시오.		|
+AdminFatalErrorForm	BodyTextRemove	Text	9	63	354	180	131075		{\VSI_MS_Sans_Serif13.0_0_0}[ProductName]을(를) 제거하기 전에 중단되었습니다. 다시 시도하려면 설치 관리자를 다시 시작해야 합니다.끝내려면 "닫기"를 클릭하십시오.		|
+AdminFatalErrorForm	CancelButton	PushButton	156	261	66	18	1		{\VSI_MS_Sans_Serif13.0_0_0}취소	PreviousButton	|
+AdminFatalErrorForm	CloseButton	PushButton	300	261	66	18	3		{\VSI_MS_Sans_Serif13.0_0_0}닫기(&C)	CancelButton	|
+AdminFatalErrorForm	Line1	Line	0	52	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+AdminFatalErrorForm	Line2	Line	0	252	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+AdminFatalErrorForm	PreviousButton	PushButton	228	261	66	18	1		{\VSI_MS_Sans_Serif13.0_0_0}< 뒤로(&B)	BannerBmp	|
+AdminFinishedForm	BannerBmp	Bitmap	0	0	375	52	1		DefBannerBitmap	CloseButton	|
+AdminFinishedForm	BannerText	Text	9	9	306	33	196611		{\VSI_MS_Sans_Serif16.0_1_0}완료		|
+AdminFinishedForm	BodyText	Text	9	63	354	180	131075		{\VSI_MS_Sans_Serif13.0_0_0}[ProductName]을(를) 제거했습니다.끝내려면 "닫기"를 클릭하십시오.		|
+AdminFinishedForm	BodyTextInstall	Text	9	63	354	180	131075		{\VSI_MS_Sans_Serif13.0_0_0}[ProductName]의 네트워크 이미지를 만들었습니다.끝내려면 "닫기"를 클릭하십시오.		|
+AdminFinishedForm	CancelButton	PushButton	156	261	66	18	1		{\VSI_MS_Sans_Serif13.0_0_0}취소	PreviousButton	|
+AdminFinishedForm	CloseButton	PushButton	300	261	66	18	3		{\VSI_MS_Sans_Serif13.0_0_0}닫기(&C)	CancelButton	|
+AdminFinishedForm	Line1	Line	0	52	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+AdminFinishedForm	Line2	Line	0	252	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+AdminFinishedForm	PreviousButton	PushButton	228	261	66	18	1		{\VSI_MS_Sans_Serif13.0_0_0}< 뒤로(&B)	BannerBmp	|
+AdminFolderForm	BannerBmp	Bitmap	0	0	375	52	1		DefBannerBitmap	NextButton	|
+AdminFolderForm	BannerText	Text	9	9	306	33	196611		{\굴림_Bold_12_0}네트워크 위치		|
+AdminFolderForm	Body	Text	9	63	354	48	131075		{\굴림__9_0}네트워크 이미지를 다음 위치에 만듭니다.이 폴더에 이미지를 만들려면 "다음"을 클릭하고, 다른 폴더를 사용하려면 아래에 폴더 이름을 입력하거나 "찾아보기"를 클릭하십시오.		|
+AdminFolderForm	BrowseButton	PushButton	282	126	84	18	3		{\굴림__9_0}찾아보기(&R)...	DiskCostButton	|
+AdminFolderForm	CancelButton	PushButton	156	261	66	18	3		{\굴림__9_0}취소	PreviousButton	|
+AdminFolderForm	DiskCostButton	PushButton	282	150	84	18	3		{\굴림__9_0}디스크 공간(&D)...	CancelButton	|
+AdminFolderForm	FolderEdit	PathEdit	18	126	258	18	7	TARGETDIR	{\굴림__9_0}MsiPathEdit	BrowseButton	|
+AdminFolderForm	FolderLabel	Text	18	114	348	12	3		{\굴림__9_0}폴더(&F):	FolderEdit	|
+AdminFolderForm	Line1	Line	0	52	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+AdminFolderForm	Line2	Line	0	252	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+AdminFolderForm	NextButton	PushButton	300	261	66	18	3		{\굴림__9_0}다음(&N) >	FolderLabel	|
+AdminFolderForm	PreviousButton	PushButton	228	261	66	18	3		{\굴림__9_0}< 뒤로(&B)	BannerBmp	|
+AdminMaintenanceForm	BannerBmp	Bitmap	0	0	375	52	1		DefBannerBitmap	FinishButton	|
+AdminMaintenanceForm	BannerText	Text	9	9	306	33	196611		{\VSI_MS_Sans_Serif16.0_1_0}[ProductName] 설치 마법사 시작		|
+AdminMaintenanceForm	BodyText	Text	9	63	354	42	131075		{\VSI_MS_Sans_Serif13.0_0_0}[ProductName]을(를) 복구할 것인지 아니면 제거할 것인지 선택하십시오.		|
+AdminMaintenanceForm	CancelButton	PushButton	156	261	66	18	3		{\VSI_MS_Sans_Serif13.0_0_0}취소	PreviousButton	|
+AdminMaintenanceForm	FinishButton	PushButton	300	261	66	18	3		{\VSI_MS_Sans_Serif13.0_0_0}마침(&F)	RepairRadioGroup	|
+AdminMaintenanceForm	Line1	Line	0	52	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+AdminMaintenanceForm	Line2	Line	0	252	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+AdminMaintenanceForm	PreviousButton	PushButton	228	261	66	18	1		{\VSI_MS_Sans_Serif13.0_0_0}< 뒤로(&B)	BannerBmp	|
+AdminMaintenanceForm	RepairRadioGroup	RadioButtonGroup	18	108	348	48	3	AdminMaintenanceForm_Action	{\VSI_MS_Sans_Serif13.0_0_0}MsiRadioButtonGroup	CancelButton	|
+AdminProgressForm	BannerBmp	Bitmap	0	0	375	52	1		DefBannerBitmap	NextButton	|
+AdminProgressForm	CancelButton	PushButton	156	261	66	18	3		{\굴림__9_0}취소	PreviousButton	|
+AdminProgressForm	InstalledBannerText	Text	9	9	255	33	196611		{\굴림_Bold_12_0}[ProductName] 설치		|
+AdminProgressForm	InstalledBody	Text	9	63	354	12	131075		{\굴림__9_0}[ProductName]을(를) 설치하고 있습니다.		|
+AdminProgressForm	Line1	Line	0	52	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+AdminProgressForm	Line2	Line	0	252	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+AdminProgressForm	NextButton	PushButton	300	261	66	18	1		{\굴림__9_0}다음(&N) >	CancelButton	|
+AdminProgressForm	PreviousButton	PushButton	228	261	66	18	1		{\굴림__9_0}< 뒤로(&B)	BannerBmp	|
+AdminProgressForm	ProgressBar	ProgressBar	18	108	336	15	1		{\굴림__8_0}MsiProgressBar		|
+AdminProgressForm	ProgressLabel	Text	18	96	336	12	3		{\굴림__9_0}잠시 기다려 주십시오...		|
+AdminProgressForm	RemoveBannerText	Text	7	9	306	33	196611		{\굴림_Bold_12_0}[ProductName] 제거		|
+AdminProgressForm	RemovedBody	Text	10	63	336	12	131075		{\굴림__9_0}[ProductName]을(를) 제거하고 있습니다.		|
+AdminResumeForm	BannerBmp	Bitmap	0	0	375	52	1		DefBannerBitmap	FinishButton	|
+AdminResumeForm	BannerText	Text	9	9	306	33	196611		{\굴림_Bold_12_0}[ProductName] 설치 마법사 시작		|
+AdminResumeForm	BodyText	Text	9	63	354	180	131075		{\굴림__9_0}컴퓨터에 [ProductName] 설치를 계속합니다.계속하려면 "마침"을 클릭하십시오.		|
+AdminResumeForm	CancelButton	PushButton	156	261	66	18	3		{\굴림__9_0}취소	PreviousButton	|
+AdminResumeForm	FinishButton	PushButton	300	261	66	18	3		{\굴림__9_0}마침(&F)	CancelButton	|
+AdminResumeForm	Line1	Line	0	52	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+AdminResumeForm	Line2	Line	0	252	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+AdminResumeForm	PreviousButton	PushButton	228	261	66	18	1		{\굴림__9_0}< 뒤로(&B)	BannerBmp	|
+AdminUserExitForm	BannerBmp	Bitmap	0	0	375	52	1		DefBannerBitmap	CloseButton	|
+AdminUserExitForm	BannerText	Text	9	9	306	33	196611		{\VSI_MS_Sans_Serif16.0_1_0} 중단		|
+AdminUserExitForm	BodyTextInstall	Text	18	63	342	24	131075		{\VSI_MS_Sans_Serif13.0_0_0}[ProductName]을(를) 설치하기 전에 중단되었습니다. 다시 시도하려면 설치 관리자를 다시 시작해야 합니다.		|
+AdminUserExitForm	BodyTextRemove	Text	9	63	354	180	131075		{\VSI_MS_Sans_Serif13.0_0_0}[ProductName]을(를) 제거하기 전에 중단되었습니다. 다시 시도하려면 설치 관리자를 다시 시작해야 합니다.끝내려면 "닫기"를 클릭하십시오.		|
+AdminUserExitForm	CancelButton	PushButton	156	261	66	18	1		{\VSI_MS_Sans_Serif13.0_0_0}취소	PreviousButton	|
+AdminUserExitForm	CloseButton	PushButton	300	261	66	18	3		{\VSI_MS_Sans_Serif13.0_0_0}닫기(&C)	CancelButton	|
+AdminUserExitForm	Line1	Line	0	52	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+AdminUserExitForm	Line2	Line	0	252	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+AdminUserExitForm	PreviousButton	PushButton	228	261	66	18	1		{\VSI_MS_Sans_Serif13.0_0_0}< 뒤로(&B)	BannerBmp	|
+AdminWelcomeForm	BannerBmp	Bitmap	0	0	375	52	1		DefBannerBitmap	NextButton	|
+AdminWelcomeForm	BannerText	Text	9	9	306	33	196611		{\굴림_Bold_12_0}[ProductName] 네트워크 설치 마법사 시작		|
+AdminWelcomeForm	CancelButton	PushButton	156	261	66	18	3		{\굴림__9_0}취소	PreviousButton	|
+AdminWelcomeForm	CopyrightWarningText	Text	9	186	354	66	131075		{\VSI_MS_Sans_Serif13.0_0_0}경고: 이 컴퓨터 프로그램은 저작권법과 국제 협약의 보호를 받습니다. 이 프로그램의 전부 또는 일부를 무단으로 복제, 배포하는 행위는 민사 및 형사법에 의해 엄격히 규제되어 있으며, 기소 사유가 됩니다.		|
+AdminWelcomeForm	Line1	Line	0	52	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+AdminWelcomeForm	Line2	Line	0	252	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+AdminWelcomeForm	NextButton	PushButton	300	261	66	18	3		{\굴림__9_0}다음(&N) >	CancelButton	|
+AdminWelcomeForm	PreviousButton	PushButton	228	261	66	18	3		{\굴림__9_0}< 뒤로(&B)	BannerBmp	|
+AdminWelcomeForm	WelcomeText	Text	9	63	354	114	131075		{\VSI_MS_Sans_Serif13.0_0_0}[ProductName]을(를) 컴퓨터에 설치하는 데 필요한 과정을 안내합니다.		|
+Cancel	BodyText	Text	6	9	258	24	131075		{\VSI_MS_Sans_Serif13.0_0_0}아직 완료되지 않았습니다. 끝내시겠습니까?		|
+Cancel	NoButton	PushButton	198	48	65	21	3		{\VSI_MS_Sans_Serif13.0_0_0}아니요(&N)	YesButton	|
+Cancel	YesButton	PushButton	126	48	65	21	3		{\VSI_MS_Sans_Serif13.0_0_0}예(&Y)	NoButton	|
+ConfirmInstallForm	BannerBmp	Bitmap	0	0	375	52	1		DefBannerBitmap	NextButton	|
+ConfirmInstallForm	BannerText	Text	9	9	306	33	196611		{\굴림_Bold_12_0}설치 확인		|
+ConfirmInstallForm	BodyText1	Text	9	63	354	180	131075		{\굴림__9_0}[ProductName]을(를) 컴퓨터에 설치할 준비가 되었습니다.설치를 시작하려면 "다음"을 클릭하십시오.		|
+ConfirmInstallForm	CancelButton	PushButton	156	261	66	18	3		{\굴림__9_0}취소	PreviousButton	|
+ConfirmInstallForm	Line1	Line	0	52	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+ConfirmInstallForm	Line2	Line	0	252	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+ConfirmInstallForm	NextButton	PushButton	300	261	66	18	3		{\굴림__9_0}다음(&N) >	CancelButton	|
+ConfirmInstallForm	PreviousButton	PushButton	228	261	66	18	3		{\굴림__9_0}< 뒤로(&B)	BannerBmp	|
+ConfirmRemoveDialog	BodyText	Text	6	9	258	24	131075		{\VSI_MS_Sans_Serif13.0_0_0}[ProductName]을(를) 컴퓨터에서 제거하도록 선택했습니다. 제거하시겠습니까?		|
+ConfirmRemoveDialog	NoButton	PushButton	198	48	65	21	3		{\VSI_MS_Sans_Serif13.0_0_0}아니요(&N)	YesButton	|
+ConfirmRemoveDialog	YesButton	PushButton	126	48	65	21	3		{\VSI_MS_Sans_Serif13.0_0_0}예(&Y)	NoButton	|
+DiskCost	AvailableBodyText	Text	6	9	348	24	131075		{\VSI_MS_Sans_Serif13.0_0_0}아래 목록에는 [ProductName]을(를) 설치할 수 있는 대상 드라이브 및 각 드라이브의 사용 가능한 디스크 공간과 필요한 디스크 공간이 포함되어 있습니다.		|
+DiskCost	OKButton	PushButton	288	165	66	18	3		{\VSI_MS_Sans_Serif13.0_0_0}확인	VolumeCostList1	|
+DiskCost	RequiredBodyText	Text	6	9	348	24	131075		{\VSI_MS_Sans_Serif13.0_0_0}필요한 디스크 공간이 사용 가능한 디스크 공간보다 큽니다. 강조된 항목은 디스크 공간이 충분하지 않은 드라이브를 나타냅니다.		|
+DiskCost	VolumeCostList1	VolumeCostList	6	39	348	114	458759		{\VSI_MS_Sans_Serif13.0_0_0}{116}{80}{80}{80}{80}	OKButton	|
+ErrorDialog	A	PushButton	0	72	81	21	3		{\VSI_MS_Sans_Serif13.0_0_0}끝내기(&X)		|
+ErrorDialog	C	PushButton	42	72	81	21	3		{\VSI_MS_Sans_Serif13.0_0_0}취소		|
+ErrorDialog	ErrorText	Text	6	9	318	48	131073		{\VSI_MS_Sans_Serif13.0_0_0}		|
+ErrorDialog	I	PushButton	81	72	81	21	3		{\VSI_MS_Sans_Serif13.0_0_0}계속(&O)		|
+ErrorDialog	N	PushButton	120	72	81	21	3		{\VSI_MS_Sans_Serif13.0_0_0}아니요(&N)		|
+ErrorDialog	O	PushButton	159	72	81	21	3		{\VSI_MS_Sans_Serif13.0_0_0}확인		|
+ErrorDialog	R	PushButton	198	72	81	21	3		{\VSI_MS_Sans_Serif13.0_0_0}다시 시도(&T)		|
+ErrorDialog	Y	PushButton	240	72	81	21	3		{\VSI_MS_Sans_Serif13.0_0_0}예(&Y)		|
+FatalErrorForm	BannerBmp	Bitmap	0	0	375	52	1		DefBannerBitmap	CloseButton	|
+FatalErrorForm	BannerText	Text	9	9	306	33	196611		{\VSI_MS_Sans_Serif16.0_1_0}실패		|
+FatalErrorForm	BodyTextInstall	Text	9	63	354	180	131075		{\VSI_MS_Sans_Serif13.0_0_0}[ProductName]을(를) 제거하기 전에 중단되었습니다. 다시 시도하려면 설치 관리자를 다시 시작해야 합니다.끝내려면 "닫기"를 클릭하십시오.		|
+FatalErrorForm	BodyTextRemove	Text	9	63	354	180	131075		{\VSI_MS_Sans_Serif13.0_0_0}[ProductName]을(를) 설치하기 전에 중단되었습니다. 다시 시도하려면 설치 관리자를 다시 시작해야 합니다.끝내려면 "닫기"를 클릭하십시오.		|
+FatalErrorForm	CancelButton	PushButton	156	261	66	18	1		{\VSI_MS_Sans_Serif13.0_0_0}취소	PreviousButton	|
+FatalErrorForm	CloseButton	PushButton	300	261	66	18	3		{\VSI_MS_Sans_Serif13.0_0_0}닫기(&C)	CancelButton	|
+FatalErrorForm	Line1	Line	0	52	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+FatalErrorForm	Line2	Line	0	252	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+FatalErrorForm	PreviousButton	PushButton	228	261	66	18	1		{\VSI_MS_Sans_Serif13.0_0_0}< 뒤로(&B)	BannerBmp	|
+FilesInUse	ContinueButton	PushButton	186	150	81	18	2		{\VSI_MS_Sans_Serif13.0_0_0}계속(&C)	ExitButton	|
+FilesInUse	ExitButton	PushButton	273	150	81	18	3		{\VSI_MS_Sans_Serif13.0_0_0}제거 중단(&X)	ListFilesInUse	|
+FilesInUse	InstallBodyText	Text	6	9	345	36	131075		{\VSI_MS_Sans_Serif13.0_0_0}업데이트해야 하는 파일을 다음 응용 프로그램에서 사용하고 있습니다. 응용 프로그램을 닫고 다시 시도하세요.		|
+FilesInUse	ListFilesInUse	ListBox	6	51	348	90	65543	FileInUseProcess	{\VSI_MS_Sans_Serif13.0_0_0}MsiFilesInUse	RetryButton	|
+FilesInUse	RemoveBodyText	Text	6	9	345	36	131075		{\VSI_MS_Sans_Serif13.0_0_0}제거해야 하는 파일을 다음 응용 프로그램에서 사용하고 있습니다. 응용 프로그램을 닫고 다시 시도하세요.		|
+FilesInUse	RetryButton	PushButton	99	150	81	18	2		{\VSI_MS_Sans_Serif13.0_0_0}다시 시도(&T)	ContinueButton	|
+FinishedForm	BannerBmp	Bitmap	0	0	375	52	1		DefBannerBitmap	CloseButton	|
+FinishedForm	BannerText	Text	9	9	306	33	196611		{\VSI_MS_Sans_Serif16.0_1_0}완료		|
+FinishedForm	BodyText	Text	9	63	354	138	131075		{\VSI_MS_Sans_Serif13.0_0_0}[ProductName]을(를) 설치했습니다.끝내려면 "닫기"를 클릭하십시오.		|
+FinishedForm	BodyTextRemove	Text	9	63	354	138	131075		{\VSI_MS_Sans_Serif13.0_0_0}[ProductName]을(를) 제거했습니다.끝내려면 "닫기"를 클릭하십시오.		|
+FinishedForm	CancelButton	PushButton	156	261	66	18	1		{\VSI_MS_Sans_Serif13.0_0_0}취소	PreviousButton	|
+FinishedForm	CloseButton	PushButton	300	261	66	18	3		{\VSI_MS_Sans_Serif13.0_0_0}닫기(&C)	CancelButton	|
+FinishedForm	Line1	Line	0	52	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+FinishedForm	Line2	Line	0	252	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+FinishedForm	PreviousButton	PushButton	228	261	66	18	1		{\VSI_MS_Sans_Serif13.0_0_0}< 뒤로(&B)	BannerBmp	|
+FinishedForm	UpdateText	Text	9	216	354	36	131075		{\VSI_MS_Sans_Serif13.0_0_0}.NET Framework에 대한 중요 업데이트를 확인하려면 Windows Update를 사용하십시오.		|
+FolderForm	AllUsersRadioGroup	RadioButtonGroup	24	210	342	42	3	FolderForm_AllUsers	{\굴림__8_0}MsiRadioButtonGroup	CancelButton	|
+FolderForm	AllUsersText	Text	18	186	348	24	131075		{\굴림__9_0}자신 또는 이 컴퓨터를 사용하는 모든 사람이 사용할 수 있도록 [ProductName] 설치:		|
+FolderForm	BannerBmp	Bitmap	0	0	375	52	1		DefBannerBitmap	NextButton	|
+FolderForm	BannerText	Text	9	9	306	33	196611		{\굴림_Bold_12_0}설치 폴더 선택		|
+FolderForm	Body	Text	9	63	354	48	131075		{\굴림__9_0}[ProductName]을(를) 다음 폴더에 설치합니다.이 폴더에 설치하려면 "다음"을 클릭하고, 다른 폴더에 설치하려면 아래에 폴더 이름을 입력하거나 "찾아보기"를 클릭하십시오.		|
+FolderForm	BrowseButton	PushButton	282	126	84	18	3		{\굴림__9_0}찾아보기(&R)...	DiskCostButton	|
+FolderForm	CancelButton	PushButton	156	261	66	18	3		{\굴림__9_0}취소	PreviousButton	|
+FolderForm	DiskCostButton	PushButton	282	150	84	18	3		{\굴림__9_0}디스크 공간(&D)...	AllUsersRadioGroup	|
+FolderForm	FolderEdit	PathEdit	18	126	258	18	7	TARGETDIR	{\굴림__9_0}MsiPathEdit	BrowseButton	|
+FolderForm	FolderLabel	Text	18	114	348	12	3		{\굴림__9_0}폴더(&F):	FolderEdit	|
+FolderForm	Line1	Line	0	52	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+FolderForm	Line2	Line	0	252	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+FolderForm	NextButton	PushButton	300	261	66	18	3		{\굴림__9_0}다음(&N) >	FolderLabel	|
+FolderForm	PreviousButton	PushButton	228	261	66	18	3		{\굴림__9_0}< 뒤로(&B)	BannerBmp	|
+MaintenanceForm	BannerBmp	Bitmap	0	0	375	52	1		DefBannerBitmap	FinishButton	|
+MaintenanceForm	BannerText	Text	9	9	306	33	196611		{\VSI_MS_Sans_Serif16.0_1_0}[ProductName] 복구/제거 마법사 시작		|
+MaintenanceForm	BodyText	Text	9	63	354	42	131075		{\VSI_MS_Sans_Serif13.0_0_0}[ProductName]을(를) 복구할 것인지 아니면 제거할 것인지 선택하십시오.		|
+MaintenanceForm	CancelButton	PushButton	156	261	66	18	3		{\VSI_MS_Sans_Serif13.0_0_0}취소	PreviousButton	|
+MaintenanceForm	FinishButton	PushButton	300	261	66	18	3		{\VSI_MS_Sans_Serif13.0_0_0}다음	RepairRadioGroup	|
+MaintenanceForm	Line1	Line	0	52	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+MaintenanceForm	Line2	Line	0	252	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+MaintenanceForm	PreviousButton	PushButton	228	261	66	18	1		{\VSI_MS_Sans_Serif13.0_0_0}< 뒤로(&B)	BannerBmp	|
+MaintenanceForm	RepairRadioGroup	RadioButtonGroup	18	108	348	48	3	MaintenanceForm_Action	{\VSI_MS_Sans_Serif13.0_0_0}MsiRadioButtonGroup	CancelButton	|
+ProgressForm	BannerBmp	Bitmap	0	0	375	52	1		DefBannerBitmap	NextButton	|
+ProgressForm	CancelButton	PushButton	156	261	66	18	3		{\굴림__9_0}취소	PreviousButton	|
+ProgressForm	InstalledBannerText	Text	9	9	255	33	196611		{\굴림_Bold_12_0}[ProductName] 설치		|
+ProgressForm	InstalledBody	Text	9	63	354	12	131075		{\굴림__9_0}[ProductName]을(를) 설치하고 있습니다.		|
+ProgressForm	Line1	Line	0	52	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+ProgressForm	Line2	Line	0	252	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+ProgressForm	NextButton	PushButton	300	261	66	18	1		{\굴림__9_0}다음(&N) >	CancelButton	|
+ProgressForm	PreviousButton	PushButton	228	261	66	18	1		{\굴림__9_0}< 뒤로(&B)	BannerBmp	|
+ProgressForm	ProgressBar	ProgressBar	18	108	336	15	1		{\굴림__8_0}MsiProgressBar		|
+ProgressForm	ProgressLabel	Text	18	96	336	12	3		{\굴림__9_0}잠시 기다려 주십시오...		|
+ProgressForm	RemoveBannerText	Text	9	9	306	33	196611		{\굴림_Bold_12_0}[ProductName] 제거		|
+ProgressForm	RemovedBody	Text	9	63	336	12	131075		{\굴림__9_0}[ProductName]을(를) 제거하고 있습니다.		|
+ResumeForm	BannerBmp	Bitmap	0	0	375	52	1		DefBannerBitmap	FinishButton	|
+ResumeForm	BannerText	Text	9	9	306	33	196611		{\VSI_MS_Sans_Serif16.0_1_0}[ProductName] 설치 마법사 시작		|
+ResumeForm	BodyText	Text	9	63	354	180	131075		{\VSI_MS_Sans_Serif13.0_0_0}컴퓨터에 [ProductName] 설치를 계속합니다.계속하려면 "마침"을 클릭하십시오.		|
+ResumeForm	CancelButton	PushButton	156	261	66	18	3		{\VSI_MS_Sans_Serif13.0_0_0}취소	PreviousButton	|
+ResumeForm	FinishButton	PushButton	300	261	66	18	3		{\VSI_MS_Sans_Serif13.0_0_0}마침(&F)	CancelButton	|
+ResumeForm	Line1	Line	0	52	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+ResumeForm	Line2	Line	0	252	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+ResumeForm	PreviousButton	PushButton	228	261	66	18	1		{\VSI_MS_Sans_Serif13.0_0_0}< 뒤로(&B)	BannerBmp	|
+SelectFolderDialog	BrowseText	Text	6	9	60	12	3		{\VSI_MS_Sans_Serif13.0_0_0}찾아보기(&B):	FolderCombo	|
+SelectFolderDialog	CancelButton	PushButton	240	198	66	18	3		{\VSI_MS_Sans_Serif13.0_0_0}취소	BrowseText	|
+SelectFolderDialog	FolderCombo	DirectoryCombo	66	6	198	120	3604491	SelectFolderDialog_Property	{\VSI_MS_Sans_Serif13.0_0_0}MsiDirectoryCombo	FolderUpButton	|
+SelectFolderDialog	FolderList	DirectoryList	6	30	300	129	15	SelectFolderDialog_Property	{\VSI_MS_Sans_Serif13.0_0_0}MsiDirectoryList	FolderText	|
+SelectFolderDialog	FolderPathEdit	PathEdit	66	168	240	18	15	SelectFolderDialog_Property	{\VSI_MS_Sans_Serif13.0_0_0}MsiPathEdit	OKButton	|
+SelectFolderDialog	FolderText	Text	6	171	60	12	3		{\VSI_MS_Sans_Serif13.0_0_0}폴더(&F):	FolderPathEdit	|
+SelectFolderDialog	FolderUpButton	PushButton	270	6	18	18	3670019		[SFF_UpFldrBtn]	NewFolderButton	|
+SelectFolderDialog	NewFolderButton	PushButton	288	6	18	18	3670019		[SFF_NewFldrBtn]	FolderList	|
+SelectFolderDialog	OKButton	PushButton	168	198	66	18	3		{\VSI_MS_Sans_Serif13.0_0_0}확인	CancelButton	|
+UserExitForm	BannerBmp	Bitmap	0	0	375	52	1		DefBannerBitmap	CloseButton	|
+UserExitForm	BannerText	Text	9	9	306	33	196611		{\VSI_MS_Sans_Serif16.0_1_0}중단		|
+UserExitForm	BodyTextInstall	Text	18	63	342	24	131075		{\VSI_MS_Sans_Serif13.0_0_0}[ProductName]을(를) 설치하기 전에 중단되었습니다. 다시 시도하려면 설치 관리자를 다시 시작해야 합니다.		|
+UserExitForm	BodyTextRemove	Text	9	63	354	180	131075		{\VSI_MS_Sans_Serif13.0_0_0}[ProductName]을(를) 제거하기 전에 중단되었습니다. 다시 시도하려면 설치 관리자를 다시 시작해야 합니다.끝내려면 "닫기"를 클릭하십시오.		|
+UserExitForm	CancelButton	PushButton	156	261	66	18	1		{\VSI_MS_Sans_Serif13.0_0_0}취소	PreviousButton	|
+UserExitForm	CloseButton	PushButton	300	261	66	18	3		{\VSI_MS_Sans_Serif13.0_0_0}닫기(&C)	CancelButton	|
+UserExitForm	Line1	Line	0	52	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+UserExitForm	Line2	Line	0	252	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+UserExitForm	PreviousButton	PushButton	228	261	66	18	1		{\VSI_MS_Sans_Serif13.0_0_0}< 뒤로(&B)	BannerBmp	|
+WelcomeForm	BannerBmp	Bitmap	0	0	375	52	1		DefBannerBitmap	NextButton	|
+WelcomeForm	BannerText	Text	9	9	306	33	196611		{\굴림_Bold_12_0}[ProductName] 설치 마법사 시작		|
+WelcomeForm	CancelButton	PushButton	156	261	66	18	3		{\굴림__9_0}취소	PreviousButton	|
+WelcomeForm	CopyrightWarningText	Text	9	186	354	66	131075		{\VSI_MS_Sans_Serif13.0_0_0}경고: 이 컴퓨터 프로그램은 저작권법과 국제 협약의 보호를 받습니다. 이 프로그램의 전부 또는 일부를 무단으로 복제, 배포하는 행위는 민사 및 형사법에 의해 엄격히 규제되어 있으며, 기소 사유가 됩니다.		|
+WelcomeForm	Line1	Line	0	52	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+WelcomeForm	Line2	Line	0	252	375	6	1		{\VSI_MS_Sans_Serif13.0_0_0}MsiHorizontalLine		|
+WelcomeForm	NextButton	PushButton	300	261	66	18	3		{\굴림__9_0}다음(&N) >	CancelButton	|
+WelcomeForm	PreviousButton	PushButton	228	261	66	18	3		{\굴림__9_0}< 뒤로(&B)	BannerBmp	|
+WelcomeForm	WelcomeText	Text	9	63	354	114	131075		{\VSI_MS_Sans_Serif13.0_0_0}[ProductName]을(를) 컴퓨터에 설치하는 데 필요한 과정을 안내합니다.		|
